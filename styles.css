@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.image-container {
+    display: flex;
+    border: 2px solid red;
+    max-width: 40vw;
+    min-height: 100vh;
+}
+
+.odin-text {
+    position: absolute;
+    left: 15vw;
+    right: 15vw;
+    top: 30vw;
+}
+
+img.background{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.description {
+
+}
+
+.container {
+    display: flex;
+    max-width: 60vw;
+}
+.form-container { 
+    display: flex;
+    border: none;
+    
+}
