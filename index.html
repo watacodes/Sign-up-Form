@@ -8,48 +8,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="whole-content">
     <div class="image-container">
         <img class="background" src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt="background-image">
-        <img class="logo" src="./images/odin-lined.png" alt="logo">
-        <div class="odin-text">Odin</div>
+        <div class="background-text">watacodes</div>
     </div>
+
     <div class="container">
         <p class="description">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
         <br><br> Sing up <em>now</em> to get started.
         <br><br> You <em>know</em> you want to.
         </p>
     
-      <fieldset class="form-container">
-        <legend>Let's do this!</legend>
-          <span>
+      <form class="form-container">
+        <p class="form-title">Let's do this!</p>
+          <div class="inputbox">
             <label for="first-name">FIRST NAME</label>
             <input type="text" name="first-name" id="first-name">
-    
+          </div>
+
+          <div class="inputbox">
             <label for="last-name">LAST NAME</label>
             <input type="text" name="last-name" id="last-name">
-          </span>
-          <div>
+          </div>
+          
+          <div class="inputbox">
             <label for="email">EMAIL</label>
             <input type="email" name="email" id="email">
-          
-            <label for="user-phonenumber">PHONE NUMBER</label>
-            <input type="number" name="user-phonenumber" id="user-phonenumber">
           </div>
-          <div>
+
+          <div class="inputbox">
+            <label for="user-phonenumber">PHONE NUMBER</label>
+            <input type="tel" name="user-phonenumber" id="user-phonenumber">
+          </div>
+
+          <div class="inputbox">
             <label for="password">PASSWORD</label>
             <input type="password" name="password" id="password">
-          
+          </div>
+
+          <div class="inputbox">
             <label for="confirm-password">CONFIRM PASSWORD</label>
             <input type="password" name="confirm-password" id="confirm-password">
           </div>
-      </fieldset>
-    </div>
+      </form>
 
-    <div class="container2">
-        <button class="create-acc-btn">Create Account</button>
+      <div class="container2">
+        <button class="create-acc-btn" type="submit">Create Account</button>
 
-        <p>Already have an account? <span class="login">Log in</span></p>
+        <p class="login-suggestion">Already have an account? <a href="login.html" class="login">Log in</a></p>
+      </div>
     </div>
+  </div>
+
+
 
 
 
