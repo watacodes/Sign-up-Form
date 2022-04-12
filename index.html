@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap');
+    </style>
 </head>
 <body>
   <div class="whole-content">
@@ -15,16 +18,19 @@
     </div>
 
     <div class="container">
+      
+      <div class="description-container">
         <p class="description">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-        <br><br> Sing up <em>now</em> to get started.
+        <br><br> Sign up <em>now</em> to get started.
         <br><br> You <em>know</em> you want to.
         </p>
-    
+      </div>
+
       <form class="form-container">
         <p class="form-title">Let's do this!</p>
           <div class="inputbox">
             <label for="first-name">FIRST NAME</label>
-            <input type="text" name="first-name" id="first-name">
+            <input type="text" name="first-name" id="first-name" required>
           </div>
 
           <div class="inputbox">
@@ -34,28 +40,27 @@
           
           <div class="inputbox">
             <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
           </div>
 
           <div class="inputbox">
             <label for="user-phonenumber">PHONE NUMBER</label>
-            <input type="tel" name="user-phonenumber" id="user-phonenumber">
+            <input type="tel" name="user-phonenumber" id="user-phonenumber" minlength="9" maxlength="11">
           </div>
 
           <div class="inputbox">
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" required>
           </div>
 
           <div class="inputbox">
             <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm-password" id="confirm-password">
+            <input type="password" name="confirm-password" id="confirm-password" required>
           </div>
+        <button class="create-acc-btn" type="submit">Create Account</button>
       </form>
 
       <div class="container2">
-        <button class="create-acc-btn" type="submit">Create Account</button>
-
         <p class="login-suggestion">Already have an account? <a href="login.html" class="login">Log in</a></p>
       </div>
     </div>
